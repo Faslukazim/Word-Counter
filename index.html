@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Counter</title>
+    <link rel="stylesheet" href="Public/index.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="heading">
+        <p>Enter Your Message</p>
+      </div>
+      <div>
+        <textarea
+          name=""
+          id="text1"
+          cols="30"
+          rows="10"
+          placeholder="Enter here..."
+        ></textarea>
+      </div>
+      <div class="count">
+        <p id="characters"></p>
+        <p id="words"></p>
+      </div>
+    </div>
+    <script>
+      
+      document.getElementById("text1").onkeyup = function () {
+        document.getElementById("characters").innerHTML =
+          "Characters: " + this.value.length;
+
+         var tx= text1.value.match(/([\s]+)/g).length;
+        console.log(tx);
+        document.getElementById("words").innerHTML =
+          "Words: " + tx;
+
+
+      };
+    
+      
+      
+      
+
+  
+    </script>
+  </body>
+</html>

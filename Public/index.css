@@ -1,0 +1,27 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+.main{
+    height: 350px;
+    width: 400px;
+    background-color: rgb(6, 5, 5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+    border: none;
+}
+textarea{
+    border-radius: 8px;
+}
+.heading{
+    color: white;
+}
+p{
+    color: white;
+}
+
+    
